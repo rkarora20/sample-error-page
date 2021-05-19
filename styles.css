@@ -1,0 +1,66 @@
+body {
+  color: #2f80ed;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.boxes {
+  display: flex;
+}
+
+.image {
+  margin: auto;
+  margin-top: 110px;
+  width: 520px;
+  height: 190px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.error-name {
+cursor: pointer;
+font-size: 120px;
+line-height: 140px;
+font-weight :400;
+margin: auto;
+width: 400px;
+text-align: center;
+}
+
+.error-message {
+  visibility: hidden;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: auto;
+  margin-top: 10px;
+  width: 400px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .4s ease-in-out;
+}
+
+.error-name:hover+ .error-message{
+  visibility: visible;
+  opacity: 1;
+}
+
+.footer{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 30px;
+  width: 100%;
+}
+
+a{
+  color: #2f80ed;
+
+}
+
+
